@@ -30,7 +30,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'images')));
-
+app.use("/images",express.static(__dirname + "/images"));
+app.use("/public/images",express.static(__dirname + "/images"));
+app.use("/public",express.static(__dirname + "/images"));
 
 app.use('/', indexRouter);
 app.use('/user', contactRouter);

@@ -1,14 +1,14 @@
 <div class="container-flex panel">
     <div class="row justify-content-center">
-        <div class="col-7 botonera">
+        <div class="col-11 botonera">
             <label class="row etiqueta">Reporte de Fallas</i></label>
             <form id="form" action="/user" method="POST">
                 <div class="form-group">
                     <label>Descripción de la Falla:</label>
                     <textarea class="form-control" name="falla" rows="4"></textarea>
                 </div>
-                <div class="row botones">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+                <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+               
                     {{#if enviado}}
                     <div class="row justify-content-center">
                         <div class="alert alert-success" role="alert">
@@ -48,10 +48,10 @@
                     </div>
             </form>
         </div>
-    </div>
+
 
     <div class="row justify-content-center">
-        <div class="col-7 botonera">
+        <div class="col-11 botonera">
                         <label class="row etiqueta">Fallas Activas</i></label>
 {{#if removedUser}}
 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -77,12 +77,12 @@
       <td>{{this.fechaFalla}}</td>
       <td>{{this.falla}}</td>
       <td class="text-end">
-        <a href="/user/{{this.id_falla}}" type="button" class="btn btn-light btn-small"><i class="bi bi-person-x"></i> Delete</a>
+        <a href="/user/{{this.id_falla}}" type="button" class="btn btn-light btn-small"><i class="bi bi-gear-wide-connected"></i> Reponer</a>
       </td>
     </tr>
     {{/each}}
 
-
+    </div>
 
 
 

@@ -42,7 +42,7 @@ CREATE TABLE `fallas` (
 INSERT INTO `fallas` (`id_falla`, `fechaFalla`, `falla`, `status`) VALUES
 (1, '2021-04-16 03:48:02', 'Se quemó la lámpara verde de la señal 3', 1),
 (2, '2021-04-16 03:51:33', 'Falla de energía en la cabina', 1),
-(8, '2021-04-16 12:17:15', 'Señal 13 desactivada', 1);
+(3, '2021-04-16 12:17:15', 'Señal 13 desactivada', 1);
 
 --
 -- Índices para tablas volcadas
@@ -62,7 +62,7 @@ ALTER TABLE `fallas`
 -- AUTO_INCREMENT de la tabla `fallas`
 --
 ALTER TABLE `fallas`
-  MODIFY `id_falla` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_falla` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
