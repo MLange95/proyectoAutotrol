@@ -1,0 +1,79 @@
+
+  
+body {
+  background-color: rgb(161, 161, 161);
+}
+
+.btn-secondary{
+  margin-bottom: 20px
+}
+
+.badge{
+  display: center;
+  justify-content: center;
+}
+
+.botonera{
+
+justify-content: center;
+align-items: center;
+margin: 10px;
+border-width: 2px;
+border-style: solid;
+border-color: rgb(69, 80, 90);  
+border-radius: 8px;
+}
+
+.botones{
+
+  display: flex;
+
+  justify-content:stretch;
+  
+}
+
+.panel{
+  justify-content: left;
+  margin : 12px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(69, 80, 90);  
+  border-radius: 8px;
+  }
+
+.etiqueta{
+
+  display: flex;
+  color: snow;
+  background-color: rgb(69, 80, 90) ;
+  flex: auto;
+  justify-content: center;
+  font-weight: 600;
+}  
+
+.navbar .dropdown-menu .form-control {
+    width: 200px;
+}
+
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color:rgb(69, 80, 90);
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+
+}
+
+svg {width: 100%; height: auto;}
+
+
+.encabezado{
+
+background-color: rgb(69, 80, 90);
+color: snow;
+justify-content: center;
+
+}
