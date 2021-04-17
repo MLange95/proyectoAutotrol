@@ -5,7 +5,7 @@ body {
 }
 
 .btn-secondary{
-  margin-bottom: 20px
+  margin-bottom: 10px
 }
 
 .badge{
@@ -43,6 +43,7 @@ border-radius: 8px;
 
 .etiqueta{
 
+  align-content: center;
   display: flex;
   color: snow;
   background-color: rgb(69, 80, 90) ;
@@ -63,7 +64,7 @@ border-radius: 8px;
   font-size: 18px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 2px;
-
+  margin-left: 40px;
 }
 
 svg {width: 100%; height: auto;}
@@ -75,4 +76,16 @@ background-color: rgb(69, 80, 90);
 color: snow;
 justify-content: center;
 
+}
+
+.map{
+
+display: flex;
+max-width:100%;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.barra{
+  justify-content: center;
 }

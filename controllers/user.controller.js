@@ -1,6 +1,6 @@
 
 const mysql = require('mysql')
-const mailer = require('./../utils/mailer');
+const mailer = require('../utils/mailer');
 
 const pool = mysql.createPool({
     connectionLimit : 10,
@@ -49,9 +49,8 @@ const reporteFalla = async(req, res, next) => {
 }
 
 
-const getContact = async (req, res) => {
-    
-        pool.getConnection((err, connection) => {
+const getUser = async (req, res) => {
+  pool.getConnection((err, connection) => {
           if (err) throw err; // not connected!
           console.log('Connected as ID ' + connection.threadId);
           // User the connection
@@ -89,7 +88,7 @@ const deleteF = async (req, res) => {
 
 
 module.exports = {
-    getContact,
+    getUser,
     reporteFalla,
     deleteF,
 }

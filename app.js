@@ -8,9 +8,9 @@ const hbs = require('express-handlebars');
 
 require('dotenv').config();
 
-const indexRouter = require('./routes/index');
-const contactRouter = require('./routes/contact.route');
-const { deleteF } = require('./controllers/contact.controller');
+const indexRouter = require('./routes/user.route');
+const userRouter = require('./routes/user.route');
+const { deleteF } = require('./controllers/user.controller');
 
 const app = express();
 
@@ -35,7 +35,7 @@ app.use("/public/images",express.static(__dirname + "/images"));
 app.use("/public",express.static(__dirname + "/images"));
 
 app.use('/', indexRouter);
-app.use('/user', contactRouter);
+app.use('/user', userRouter);
 app.use('/user/:id_falla',deleteF)           
 
 
