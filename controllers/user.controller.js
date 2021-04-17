@@ -3,7 +3,7 @@ const mysql = require('mysql')
 const mailer = require('../utils/mailer');
 
 const pool = mysql.createConnection('mysql://mysql://b30d494a43372e:266f00b8@us-cdbr-east-03.cleardb.com/heroku_e3dd8db752fc177?reconnect=true');
-
+pool.query = util.promisify(pool.query);
 
 const reporteFalla = async(req, res, next) => {
     
